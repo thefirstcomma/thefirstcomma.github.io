@@ -25,3 +25,11 @@
     background-color: #4CAF50;
     color: white;
 }
+
+#just-line-break {
+    white-space: pre-line;
+}
+  
+#line-break-and-tab {
+    white-space: pre-wrap;
+}
