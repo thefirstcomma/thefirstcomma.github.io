@@ -6,12 +6,22 @@
     <title>Unity WebGL Player | Frappy Bird</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="../stylesheet/styles.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webgl.json", {onProgress: UnityProgress});
     </script>
   </head>
+
+  <div class="topnav">
+    <a class="../pages/active" href="home.html">Home</a>
+    <a href="../pages/dicegame.html">Dice Board Game</a>
+    <a href="../pages/papers.html">Publications</a>
+    <a href="../pages/xtra-stuff.html">Extra Stuff</a>
+    <a href="index.html">Frappy Bird</a>
+  </div>
+
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 1280px; height: 720px"></div>
