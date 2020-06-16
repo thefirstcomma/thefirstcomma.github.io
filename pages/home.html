@@ -1,27 +1,32 @@
 <head>
     <meta charset = "UTF-8">
     <link rel="stylesheet" href="../stylesheet/styles.css">
-    <title>A Website</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Andrew's Website</title>
 </head> 
 
-<div class="topnav">
-    <a class="active" href="">Home</a>
-    <a href="dicegame.html">Dice Board Game</a>
-    <a href="papers.html">Paper</a>
-    <a href="xtra-stuff.html">Extra Stuff</a>
-</div> 
+<body>
+    <!--Navigation bar-->
+    <div id="topnav"></div>
+    <script>
+    $(function(){
+        $("#topnav").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
 
-<div id="just-line-break">
-    <h1> Hi </h1>
-    Wowzers
-</div>
-
-<span id="line-break-and-tab">
-Future work (to do):
-</span>
-<ul>
-    <li>Add/work on the game.</li>
-    <li>Need more content, R&D other's website.</li>
-</ul>
-
-<img src="../pics/happy-llama-1.jpg" alt="A Happy Llama" style="width:500px;height:600px;"> 
+    <div id="just-line-break">
+        <h1> Hi </h1>
+        Wowzers
+    </div>
+    
+    <span id="line-break-and-tab">
+    Future work (to do):
+    </span>
+    <ul>
+        <li>Add/work on the game.</li>
+        <li>Need more content, R&D other's website.</li>
+    </ul>
+    
+    <img src="../pics/happy-llama-1.jpg" alt="A Happy Llama" style="width:500px;height:600px;"> 
+</body>
