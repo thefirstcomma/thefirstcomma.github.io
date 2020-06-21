@@ -1,11 +1,11 @@
 /* Add a black background color to the top navigation */
-.topnav {
-    background-color: #f7cf5f;
+#topnav {
+    background-color: #fdd157a4;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+#topnav a {
     float: left;
     color: #6d0000;
     text-align: center;
@@ -15,15 +15,32 @@
 }
   
 /* Change the color of links on hover */
-.topnav a:hover {
+#topnav a:hover {
     background-color: rgba(245, 198, 97, 0.795);
     color: #6d0000;
 }
   
 /* Add a color to the active/current link */
-.topnav a.active {
+#topnav a.active {
     background-color: #4CAF50;
     color: #6d0000;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
 }
 
 #just-line-break {
@@ -37,11 +54,12 @@
 
 body, html {
     height: 100%;
+    font-family:'Ubuntu', sans-serif;
 }  
 
-.parallax {
+.bg-img1 {
     /* The image used */
-    background-image: url("../pics/orange-sunny.png");
+    background-image: url("../pics/firewatch.png");
   
     /* Set a specific height */
     height: 100%;
@@ -53,18 +71,89 @@ body, html {
     background-size: cover;
 }
 
+.bg-img2 {
+    /* The image used */
+    background-image: url("../pics/blue-wallpaper.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img3 {
+    /* The image used */
+    background-image: url("../pics/darkblue.png");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img4 {
+    /* The image used */
+    background-image: url("../pics/red.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img5 {
+    /* The image used */
+    background-image: url("../pics/violet.png");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.fontfam {
-    font-family:'Ubuntu', sans-serif;
+.sec-centered {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .darkred {
-    color: #6d0000
+    color: #440202
+}
+
+.whited {
+    color: #a19292
+}
+
+.strokeme {
+    color: #440202;
+    text-shadow:
+    -1px -1px 0 rgb(161, 122, 122),
+    1px -1px 0 rgb(161, 122, 122),
+    -1px 1px 0 rgb(161, 122, 122),
+    1px 1px 0 rgb(161, 122, 122);  
 }
