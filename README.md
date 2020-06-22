@@ -1,7 +1,11 @@
 # thefirstcomma.github.io
 a website in progress
 
-Current tools/framework in use:
-Bootstrap, jQuery, FontAwesome, Google Images?
+![alt text](https://github.com/thefirstcomma/thefirstcomma.github.io/blob/master/pics/website-homepage.png?raw=true)
+
+Current tools/framework used:
+
+Bootstrap, jQuery, FontAwesome, Stack Overflow, and.. Google(Images).
 
 Scrolling Nav and Parallax implemented.
+
