@@ -6,20 +6,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>thefirstcomma | Andrew Kim</title>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    
 </head>
-
-<!-- <div id="topnav">
-    <a href="home.html">Home</a>
-    <a href="projects/frappybird/index.html">Projects</a>
-    <a href="pages/papers.html">Publications</a>
-    <a href="pages/xtra-stuff.html">Contact</a>
-</div> -->
 
 
 <body id="page-top">
@@ -47,35 +39,118 @@
       </nav>
 
     <div class="bg-img1"></div>
-    <div class="centered darkred">
+    <div class="centered border-title">
         <h1><center>Hi I'm Andrew Kim currently a Software Engineer based near Los Angeles, CA.</center></h1>
-        <h3 class="just-line-break">
+        <p class="just-line-break small-font">
+            <br/>
             Note: Some of the audio in the HTML5 Games may be loud. 
             Sorry.
             Lower or mute if needed.
-        </h3>
-        <h2><center>Scroll Down for more information.</center></h2>
+        </p>
+        <h2><center><br/>Scroll Down for more information.</center></h2>
     </div>
-
-    <!-- <div class="darkred">
-        <h1><center>Section 2</center></h1>
-    </div> -->
-
     
     
     <section id="projects">
-        <div class="sec-centered darkred">
+        <div class="sec-centered border-projects">
             <h1><center>PROJECTS</center></h1>
         </div>
     </section>
-
-    
+    <!-- redshrink5 -->
     <div class="bg-img4"></div>
+
+    <!-- dark blue of redshrink -->
     <div class="bg-img3"></div>
-    <div class="bg-img2"></div>
+
+    <section id="publications">
+      <div style="position:relative" class="border-pub">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:100px 80px;text-align: justify;">
+          <h1><center>PUBLICATIONS</center></h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Low Poly Wallpaper -->
+    <div class = "bg-img10"></div>
     
+    <section id="contact">
+      <div class="contact-centered border-contacts">
+          <h1><center>CONTACT</center></h1>
+          <h3 class="just-line-break"><center>
+            </br>
+            </br>
+            For business related purposes or to send any feedback:
+            </br>
+            </br>
+            </br>
+            <p class="border-sad">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <!-- <button class="btn btn-secondary" onclick="myFunction()" data-toggle="tooltip" title="Copy Email">andrewkim260@gmail.com</button> -->
+              <a href="mailto:andrewkim260@gmail.com">andrewkim260@gmail.com</a>
+            </p>
+          </center></h3>
+      </div>
+    </section>
+    <!-- moose -->
+    <div class="bg-img2"></div>
+
+    <section id="credits">
+      <div style="position:relative">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:100px 80px;text-align: justify;">
+          <h3><center>Created with Bootstrap, Font awesome, jQuery, etc.</center></h3>
+          <h3><center>Wallpaper is from Firewatch and an artist aliased Durable Canadian (on imgur).</center></h3>
+          <h3><center>Created by: Andrew Kim</center></h3>
+        </div>
+      </div>
+    </section>
+      
+    
+
     <!-- Navbar Control -->
     <script>
+      $(document).ready(function() {
+	
+        // Add class to mailto link
+        // Needed to separate the disabling of the default action AND copy email to clipboard
+        $('a[href^=mailto]').addClass('mailto-link');
+
+        var mailto = $('.mailto-link');
+        var messageCopy = 'Click to Copy';
+        var messageSuccess = 'Copied!';
+        
+        mailto.append('<span class="mailto-message"></span>');
+        $('.mailto-message').append(messageCopy);
+        
+        // Disable default action (opening your email client. yuk.)
+        $('a[href^=mailto]').click(function() {
+          return false; 
+        })
+        
+        // On click, get href and remove 'mailto:'
+        // Store email address in a variable.
+        mailto.click(function() {
+          var href = $(this).attr('href');
+          var email = href.replace('mailto:', '');
+          copyToClipboard(email);
+          $('.mailto-message').empty().append(messageSuccess);
+          setTimeout(function() {
+            $('.mailto-message').empty().append(messageCopy);}, 2000); 
+        });
+        
+      });
+      function copyToClipboard(text) {
+        var dummy = document.createElement("input");
+        document.body.appendChild(dummy);
+        dummy.setAttribute('value', text);
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+      }
+
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      }); 
+
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("topnav");
@@ -89,10 +164,7 @@
           }
         }
     </script>
-
-    <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 
 </body>

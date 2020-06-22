@@ -55,7 +55,59 @@
 body, html {
     height: 100%;
     font-family:'Ubuntu', sans-serif;
-}  
+}
+
+.border-title {
+    /* border: 1px solid black; */
+    background-color: rgba(48, 38, 38, 0.562);
+    color: #fceeee;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.border-projects {
+    /* border: 1px solid black; */
+    background-color: rgba(36, 33, 33, 0);
+    color: #f7ea2f;
+    padding: 25px;
+    font-size: 1000px;
+    letter-spacing: 25px;
+}
+
+.border-pub {
+    /* border: 1px solid black; */
+    font-size: 1000px;
+    letter-spacing: 25px;
+}
+
+.border-contacts {
+    /* border: 1px solid black; */
+    background-color: rgba(36, 33, 33, 0);
+    color: #0e0d0d;
+    padding: 25px;
+    font-size: 1000px;
+    letter-spacing: 15px;
+}
+
+.border-sad {
+    /* border: 1px solid black; */
+    background-color: rgba(243, 233, 233, 0.856);
+    color: #0e0d0d;
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 10px;
+    letter-spacing: 10px;
+}
+
+
+ .small-font {
+     font-size: 15px;
+ }
+
+ .diff-spacing {
+    padding: 40px;
+ }
 
 .bg-img1 {
     /* The image used */
@@ -87,7 +139,7 @@ body, html {
 
 .bg-img3 {
     /* The image used */
-    background-image: url("../pics/darkblue.png");
+    background-image: url("../pics/red-shrink5.jpg");
   
     /* Set a specific height */
     height: 100%;
@@ -101,7 +153,7 @@ body, html {
 
 .bg-img4 {
     /* The image used */
-    background-image: url("../pics/red.jpg");
+    background-image: url("../pics/darkblue.png");
   
     /* Set a specific height */
     height: 50%;
@@ -127,6 +179,21 @@ body, html {
     background-size: cover;
 }
 
+.bg-img10 {
+    /* The image used */
+    background-image: url("../pics/low-poly.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .centered {
     position: absolute;
     top: 40%;
@@ -137,6 +204,20 @@ body, html {
 .sec-centered {
     position: absolute;
     top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pub-centered {
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-centered {
+    position: absolute;
+    top: 420%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -156,4 +237,30 @@ body, html {
     1px -1px 0 rgb(161, 122, 122),
     -1px 1px 0 rgb(161, 122, 122),
     1px 1px 0 rgb(161, 122, 122);  
+}
+
+.mailto-link:hover .mailto-message,
+.mailto-link:focus .mailto-message,
+.mailto-link:focus-within .mailto-message {
+	display: block;
+}
+
+.mailto-link {
+	position: relative;
+	padding: 8px 0;
+}
+.mailto-message {
+	top: 3px;
+	left: 50%;
+	margin-bottom: -5px;
+	transform: translate(-50%, -100%);
+	position: absolute;
+	display: none;
+	width: auto;
+	white-space: nowrap;
+	font-size: 12px;
+	background-color: rgba(49, 46, 46, 0.925);
+	color: white;
+	padding: 2px 6px;
+	border-radius: 30px;
 }
