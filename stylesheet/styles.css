@@ -168,7 +168,7 @@ body, html {
 }
 
 
-.centered {
+.intro-centered {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -180,6 +180,19 @@ body, html {
     top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.proj-content {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #0e0d0d;
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 10px;
+    letter-spacing: 10px;
 }
 
 .pub-centered {

@@ -1,4 +1,7 @@
 # thefirstcomma.github.io
-a website
+a website in progress
 
-in progress
+Current tools/framework in use:
+Bootstrap, jQuery, FontAwesome, Google Images?
+
+Scrolling Nav and Parallax implemented.
