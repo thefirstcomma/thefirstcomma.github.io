@@ -5,7 +5,7 @@ a website in progress
 
 Current tools/framework used:
 
-Bootstrap, jQuery, FontAwesome, Stack Overflow, and.. Google(Images).
+WebSlides, Bootstrap, jQuery, FontAwesome, Stack Overflow, and.. Google(Images).
 
 Scrolling Nav and Parallax implemented.
 
