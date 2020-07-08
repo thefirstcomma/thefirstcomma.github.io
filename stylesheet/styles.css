@@ -146,7 +146,7 @@
 .border-contacts {
     /* border: 1px solid black; */
     background-color: rgba(36, 33, 33, 0);
-    color: #3212a7;
+    color: #130000;
     padding: 25px;
     font-size: 50px;
     letter-spacing: 15px;
@@ -157,6 +157,7 @@
     background-color: rgba(243, 233, 233, 0.856);
     color: #0e0d0d;
     font-size: 25px;
+    width: 60%;
     padding: 25px;
     margin-left: 10px;
     letter-spacing: 10px;
@@ -219,6 +220,9 @@
     color: #440202
 }
 
+.dark-blue {
+    color: #4240c5
+}
 
 body, html {
     height: 100%;
