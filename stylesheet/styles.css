@@ -165,7 +165,8 @@
 
 .intro-centered {
     position: absolute;
-    top: 40%;
+    width: 100%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -192,7 +193,8 @@
 
 .pub-centered {
     position: absolute;
-    top: 300%;
+    width: 65%;
+    top: 315%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -207,7 +209,8 @@
 
 .contact-centered {
     position: absolute;
-    top: 400%;
+    width: 100%;
+    top: 410%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
