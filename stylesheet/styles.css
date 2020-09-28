@@ -55,7 +55,7 @@
 
 .bg-img3 {
     /* The image used */
-    background-image: url("../pics/red-shrink5.jpg");
+    background-image: url("../pics/sunset-pink.jpg");
   
     /* Set a specific height */
     height: 100%;
@@ -122,8 +122,8 @@
 
 .border-title {
     /* border: 1px solid black; */
-    background-color: rgba(48, 38, 38, 0.562);
-    color: #fceeee;
+    /* background-color: rgba(48, 38, 38, 0.562); */
+    color: #fdf2f2;
     padding: 18px;
     font-size: 20px;
     letter-spacing: 6px;
