@@ -27,7 +27,7 @@
 
 .bg-img1 {
     /* The image used */
-    background-image: url("../pics/firewatch.png");
+    background-image: url("../pics/silv2.png");
   
     /* Set a specific height */
     height: 100%;
@@ -55,7 +55,7 @@
 
 .bg-img3 {
     /* The image used */
-    background-image: url("../pics/sunset-pink.jpg");
+    background-image: url("../pics/firewatch.png");
   
     /* Set a specific height */
     height: 100%;
@@ -123,7 +123,7 @@
 .border-title {
     /* border: 1px solid black; */
     /* background-color: rgba(48, 38, 38, 0.562); */
-    color: #fdf2f2;
+    color: rgb(97, 97, 97);
     padding: 18px;
     font-size: 20px;
     letter-spacing: 6px;
