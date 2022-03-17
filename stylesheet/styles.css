@@ -27,7 +27,7 @@
 
 .bg-img1 {
     /* The image used */
-    background-image: url("../pics/silv2.png");
+    background-image: url("../pics/start3.png");
   
     /* Set a specific height */
     height: 100%;
@@ -55,7 +55,7 @@
 
 .bg-img3 {
     /* The image used */
-    background-image: url("../pics/navyblue.jpg");
+    background-image: url("../pics/proj2.png");
   
     /* Set a specific height */
     height: 68%;
@@ -69,7 +69,7 @@
 
 .bg-img4 {
     /* The image used */
-    background-image: url("../pics/darkblue.png");
+    background-image: url("../pics/proj1.png");
   
     /* Set a specific height */
     height: 28%;
@@ -161,11 +161,11 @@
     /* border: 1px solid black; */
     background-color: rgba(243, 233, 233, 0.856);
     color: #0e0d0d;
-    font-size: 20px;
-    width: 40%;
-    padding: 25px;
+    font-size: 14px;
+    width: 34%;
+    padding: 15px;
     margin-left: 10px;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
 }
 
 
@@ -186,7 +186,7 @@
 
 .proj-content {
     position: absolute;
-    top: 150%;
+    top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(238, 227, 163, 0);
@@ -206,7 +206,7 @@
 
     /* border: 1px solid black; */
     background-color: rgba(243, 233, 233, 0.856);
-    font-family: Ubuntu;
+    font-family: 'Source Code Pro', monospace;
     color: #0e0d0d;
     font-size: 25px;
     padding: 25px;
@@ -232,5 +232,5 @@
 
 body, html {
     height: 100%;
-    font-family:'Ubuntu', sans-serif;
+    font-family:'Source Code Pro', monospace;
 }
